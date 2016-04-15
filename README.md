@@ -15,7 +15,7 @@ The source code is accessed using [git](https://git-scm.com/) and built using [M
 
 1. Clone the GDSC Super repository
 
-        git clone https://github.com/aherbert/GDSC-Super.git
+        git clone --recursive https://github.com/aherbert/GDSC-Super.git
 
 2. Build the code and package using Maven
 
