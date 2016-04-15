@@ -20,34 +20,34 @@ The source code is accessed using [git](https://git-scm.com/) and built using [M
 2. Build the code and package using Maven
 
         cd GDSC-Super
-		git submodule update --remote
+        git submodule update --remote
         mvn -P dist package install -DskipTests=true
         cd ..
     
     This will create a jar file for each module into a directory named 
-	[module]/target. The dependencies will be put into the [module]/target/dist/lib
-	directory. 
+    [module]/target. The dependencies will be put into the [module]/target/dist/lib
+    directory. 
     
-	Note that the Maven package routine puts all dependencies into the 
-	[module]/target/dist/lib directory even if they are not required by the GDSC
-	code (it does not check what functions are actually used by the code).
-	
+    Note that the Maven package routine puts all dependencies into the 
+    [module]/target/dist/lib directory even if they are not required by the GDSC
+    code (it does not check what functions are actually used by the code).
+    
 3. Copy the GDSC code to the plugins directory of ImageJ
 
-		cp GDSC/target/gdsc_*jar GDSC-SMLM/target/gdsc_smlm*jar /path/to/ImageJ/plugins
+        cp GDSC/target/gdsc_*jar GDSC-SMLM/target/gdsc_smlm*jar /path/to/ImageJ/plugins
 
 4. Copy the GDSC dependencies to the plugins directory (or the Java classpath). 
-	If you are using [Fiji](http://fiji.sc/) then use the jars directory.
+    If you are using [Fiji](http://fiji.sc/) then use the jars directory.
 
-		cp GDSC-Analytics/target/gdsc_*jar /path/to/ImageJ/plugins
-		cp GDSC-Core/target/gdsc-core*jar /path/to/ImageJ/plugins
-		cd GDSC/target/dist/lib
-		cp beansbinding* commons-math3* imagescience* /path/to/ImageJ/plugins
-		cd ../../../..
-		cd GDSC-SMLM/target/dist/lib
-		cp jtransforms* xstream* ejml* /path/to/ImageJ/plugins
-		cd ../../../..
-		
+        cp GDSC-Analytics/target/gdsc_*jar /path/to/ImageJ/plugins
+        cp GDSC-Core/target/gdsc-core*jar /path/to/ImageJ/plugins
+        cd GDSC/target/dist/lib
+        cp beansbinding* commons-math3* imagescience* /path/to/ImageJ/plugins
+        cd ../../../..
+        cd GDSC-SMLM/target/dist/lib
+        cp jtransforms* xstream* ejml* /path/to/ImageJ/plugins
+        cd ../../../..
+        
 5. The plugins will now appear under the 'Plugins > GDSC' and 
 'Plugins > GDSC SMLM' menus in ImageJ.
 
