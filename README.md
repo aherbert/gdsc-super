@@ -20,6 +20,7 @@ The source code is accessed using [git](https://git-scm.com/) and built using [M
 2. Build the code and package using Maven
 
         cd GDSC-Super
+		git submodule update --remote
         mvn -P dist package install -DskipTests=true
         cd ..
     
