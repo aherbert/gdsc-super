@@ -1,0 +1,12 @@
+[submodule "GDSC-Core"]
+	path = GDSC-Core
+	url = https://github.com/aherbert/GDSC-Core.git
+[submodule "GDSC"]
+	path = GDSC
+	url = https://github.com/aherbert/GDSC.git
+[submodule "GDSC-SMLM"]
+	path = GDSC-SMLM
+	url = https://github.com/aherbert/GDSC-SMLM.git
+[submodule "GDSC-Analytics"]
+	path = GDSC-Analytics
+	url = https://github.com/aherbert/GDSC-Analytics.git
