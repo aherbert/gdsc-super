@@ -42,10 +42,10 @@ The source code is accessed using [git](https://git-scm.com/) and built using [M
         cp GDSC-Analytics/target/gdsc_*jar /path/to/ImageJ/plugins
         cp GDSC-Core/target/gdsc-core*jar /path/to/ImageJ/plugins
         cd GDSC/target/dist/lib
-        cp beansbinding* commons-math3* imagescience* /path/to/ImageJ/plugins
+        cp beansbinding* commons-math3* /path/to/ImageJ/plugins
         cd ../../../..
         cd GDSC-SMLM/target/dist/lib
-        cp jtransforms* xstream* ejml* /path/to/ImageJ/plugins
+        cp JTransforms* JLargeArrays* xstream* ejml* commons-lang3* protobuf-java* trove4j* /path/to/ImageJ/plugins
         cd ../../../..
         
 5. The plugins will now appear under the 'Plugins > GDSC' and 
