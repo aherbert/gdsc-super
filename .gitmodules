@@ -10,3 +10,6 @@
 [submodule "GDSC-Analytics"]
 	path = GDSC-Analytics
 	url = https://github.com/aherbert/GDSC-Analytics.git
+[submodule "GDSC-Test"]
+	path = GDSC-Test
+	url = https://github.com/aherbert/GDSC-Test.git

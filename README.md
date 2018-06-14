@@ -21,7 +21,7 @@ The source code is accessed using [git](https://git-scm.com/) and built using [M
 
         cd GDSC-Super
         git submodule update --remote
-        mvn -P dist package install -DskipTests=true
+        mvn package install -DskipTests=true
         cd ..
     
     This will create a jar file for each module into a directory named 

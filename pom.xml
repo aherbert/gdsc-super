@@ -10,6 +10,7 @@
 	<name>GDSC ImageJ Super-Project</name>
 	<modules>
 		<module>GDSC-Analytics</module>
+		<module>GDSC-Test</module>
 		<module>GDSC-Core</module>
 		<module>GDSC</module>
 		<module>GDSC-SMLM</module>
