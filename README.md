@@ -22,14 +22,13 @@ The source code is accessed using [git](https://git-scm.com/) and built using [M
         cd GDSC-Super
         git submodule update --remote
         mvn package install -DskipTests=true
-        cd ..
     
     This will create a jar file for each module into a directory named 
-    [module]/target. The dependencies will be put into the [module]/target/dist/lib
+    [module]/target. The dependencies will be put into the [module]/target/dependencies
     directory. 
     
     Note that the Maven package routine puts all dependencies into the 
-    [module]/target/dist/lib directory even if they are not required by the GDSC
+    [module]/target/dependencies directory even if they are not required by the GDSC
     code (it does not check what functions are actually used by the code).
     
 3. Copy the GDSC code to the plugins directory of ImageJ
@@ -41,12 +40,12 @@ The source code is accessed using [git](https://git-scm.com/) and built using [M
 
         cp GDSC-Analytics/target/gdsc_*jar /path/to/ImageJ/plugins
         cp GDSC-Core/target/gdsc-core*jar /path/to/ImageJ/plugins
-        cd GDSC/target/dist/lib
+        cd GDSC/target/dependencies
         cp beansbinding* commons-math3* /path/to/ImageJ/plugins
-        cd ../../../..
-        cd GDSC-SMLM/target/dist/lib
+        cd ../../..
+        cd GDSC-SMLM/target/dependencies
         cp JTransforms* JLargeArrays* xstream* ejml* commons-lang3* protobuf-java* trove4j* /path/to/ImageJ/plugins
-        cd ../../../..
+        cd ../../..
         
 5. The plugins will now appear under the 'Plugins > GDSC' and 
 'Plugins > GDSC SMLM' menus in ImageJ.
