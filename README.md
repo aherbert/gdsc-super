@@ -55,7 +55,7 @@ Developers
 
 The code was developed using [Eclipse](https://eclipse.org/ide/). Each submodule
 contains an eclipse directory with notes on how to set-up the code within 
-Eclipse including an example project file and code formatting rules.
+Eclipse including code formatting rules.
 
 # About #
 
