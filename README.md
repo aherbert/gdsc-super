@@ -5,8 +5,8 @@ Contains all the GDSC ImageJ repos as submodules.
 
 This project can be used to checkout and build all the code required to install
 the [GDSC ImageJ](https://github.com/aherbert/GDSC) and [GDSC SMLM 
-ImageJ](https://github.com/aherbert/GDSC-SMLM) plugins into a version of [ImageJ]
-(https://imagej.nih.gov/ij/).
+ImageJ](https://github.com/aherbert/GDSC-SMLM) plugins into a version of 
+[ImageJ](https://imagej.nih.gov/ij/).
 
 Installation from source
 ------------------------

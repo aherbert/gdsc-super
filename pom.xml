@@ -1,18 +1,106 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>gdsc</groupId>
+	<groupId>uk.ac.sussex.gdsc</groupId>
 	<artifactId>gdsc-super</artifactId>
 	<version>0.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>GDSC ImageJ Super-Project</name>
 	<modules>
 		<module>GDSC-Analytics</module>
 		<module>GDSC-Test</module>
 		<module>GDSC-Core</module>
 		<module>GDSC</module>
 		<module>GDSC-SMLM</module>
-	</modules>	
+	</modules>
+
+	<name>GDSC ImageJ Super-Project</name>
+	<url>http:///github.com/aherbert/GDSC-Super</url>
+	<organization>
+		<name>Genome Damage and Stability Centre</name>
+		<url>http://www.sussex.ac.uk/gdsc/</url>
+	</organization>
+	<description>Genome Damage and Stability Centre ImageJ Super-Project
+
+Contains all the GDSC ImageJ repos as submodules
+</description>
+
+	<licenses>
+		<license>
+			<name>GNU General Public License (GPL) version 3.0</name>
+			<url>http://www.gnu.org/licenses/gpl.txt</url>
+			<distribution>manual</distribution>
+		</license>
+	</licenses>
+
+	<inceptionYear>2011</inceptionYear>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/aherbert/GDSC-Super/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>None</system>
+	</ciManagement>
+	<scm>
+		<connection>scm:git:git://github.com/aherbert/GDSC-Super.git</connection>
+		<developerConnection>scm:git:ssh://github.com:aherbert/GDSC-Super.git</developerConnection>
+		<url>https://github.com/aherbert/GDSC-Super</url>
+	</scm>
+
+	<developers>
+		<developer>
+			<id>aherbert</id>
+			<name>Alex Herbert</name>
+			<email>a.herbert@sussex.ac.uk</email>
+			<organization>GDSC</organization>
+			<organizationUrl>http://www.sussex.ac.uk/gdsc/</organizationUrl>
+			<roles>
+				<role>developer</role>
+			</roles>
+		</developer>
+	</developers>
+	<contributors>
+		<contributor>
+			<name>Alex Herbert</name>
+		</contributor>
+	</contributors>
+
+	<properties>
+		<license.licenseName>gpl_v3</license.licenseName>
+		<license.copyrightOwners>Alex Herbert</license.copyrightOwners>
+	</properties>
+
+	<build>
+		<defaultGoal>clean install</defaultGoal>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-gpg-plugin</artifactId>
+				<version>1.6</version>
+				<executions>
+					<execution>
+						<id>sign-artifacts</id>
+						<!--  <phase>verify</phase> -->
+						<phase>deploy</phase>
+						<goals>
+							<goal>sign</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>			
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<version>1.16</version>
+				<configuration>
+					<addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
+					<canUpdateDescription>true</canUpdateDescription>
+					<canUpdateCopyright>true</canUpdateCopyright>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
 </project>
