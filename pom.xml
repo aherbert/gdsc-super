@@ -9,11 +9,11 @@
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>GDSC-Analytics</module>
-		<module>GDSC-Test</module>
-		<module>GDSC-Core</module>
-		<module>GDSC</module>
-		<module>GDSC-SMLM</module>
+		<module>gdsc-analytics</module>
+		<module>gdsc-test</module>
+		<module>gdsc-core</module>
+		<module>gdsc</module>
+		<module>gdsc-smlm</module>
 	</modules>
 
 	<name>GDSC ImageJ Super-Project</name>

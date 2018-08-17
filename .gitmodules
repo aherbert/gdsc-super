@@ -1,15 +1,15 @@
-[submodule "GDSC-Core"]
-	path = GDSC-Core
-	url = https://github.com/aherbert/GDSC-Core
-[submodule "GDSC"]
-	path = GDSC
-	url = https://github.com/aherbert/GDSC
-[submodule "GDSC-SMLM"]
-	path = GDSC-SMLM
-	url = https://github.com/aherbert/GDSC-SMLM
-[submodule "GDSC-Analytics"]
-	path = GDSC-Analytics
-	url = https://github.com/aherbert/GDSC-Analytics
-[submodule "GDSC-Test"]
-	path = GDSC-Test
-	url = https://github.com/aherbert/GDSC-Test
+[submodule "gdsc"]
+	path = gdsc
+	url = https://github.com/aherbert/gdsc.git
+[submodule "gdsc-core"]
+	path = gdsc-core
+	url = https://github.com/aherbert/gdsc-core.git
+[submodule "gdsc-smlm"]
+	path = gdsc-smlm
+	url = https://github.com/aherbert/gdsc-smlm.git
+[submodule "gdsc-analytics"]
+	path = gdsc-analytics
+	url = https://github.com/aherbert/gdsc-analytics.git
+[submodule "gdsc-test"]
+	path = gdsc-test
+	url = https://github.com/aherbert/gdsc-test.git
