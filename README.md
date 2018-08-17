@@ -4,8 +4,8 @@ GDSC-Super
 Contains all the GDSC ImageJ repos as submodules.
 
 This project can be used to checkout and build all the code required to install
-the [GDSC ImageJ](https://github.com/aherbert/GDSC) and [GDSC SMLM 
-ImageJ](https://github.com/aherbert/GDSC-SMLM) plugins into a version of 
+the [GDSC ImageJ](https://github.com/aherbert/gdsc) and [GDSC SMLM 
+ImageJ](https://github.com/aherbert/gdsc-smlm) plugins into a version of 
 [ImageJ](https://imagej.nih.gov/ij/).
 
 Installation from source
@@ -15,11 +15,11 @@ The source code is accessed using [git](https://git-scm.com/) and built using [M
 
 1. Clone the GDSC Super repository
 
-        git clone --recursive https://github.com/aherbert/GDSC-Super.git
+        git clone --recursive https://github.com/aherbert/gdsc-super.git
 
 2. Build the code and package using Maven
 
-        cd GDSC-Super
+        cd gdsc-super
         git submodule update --remote
         mvn package install -DskipTests=true
     
@@ -33,17 +33,17 @@ The source code is accessed using [git](https://git-scm.com/) and built using [M
     
 3. Copy the GDSC code to the plugins directory of ImageJ
 
-        cp GDSC/target/gdsc_*jar GDSC-SMLM/target/gdsc_smlm*jar /path/to/ImageJ/plugins
+        cp gdsc/target/gdsc_*jar gdsc-smlm/target/gdsc_smlm*jar /path/to/ImageJ/plugins
 
 4. Copy the GDSC dependencies to the plugins directory (or the Java classpath). 
     If you are using [Fiji](http://fiji.sc/) then use the jars directory.
 
-        cp GDSC-Analytics/target/gdsc_*jar /path/to/ImageJ/plugins
-        cp GDSC-Core/target/gdsc-core*jar /path/to/ImageJ/plugins
-        cd GDSC/target/dependencies
+        cp gdsc-analytics/target/gdsc_*jar /path/to/ImageJ/plugins
+        cp gdsc-core/target/gdsc-core*jar /path/to/ImageJ/plugins
+        cd gdsc/target/dependencies
         cp beansbinding* commons-math3* /path/to/ImageJ/plugins
         cd ../../..
-        cd GDSC-SMLM/target/dependencies
+        cd gdsc-smlm/target/dependencies
         cp JTransforms* JLargeArrays* xstream* ejml* commons-lang3* protobuf-java* trove4j* /path/to/ImageJ/plugins
         cd ../../..
         
