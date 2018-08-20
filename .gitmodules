@@ -13,3 +13,6 @@
 [submodule "gdsc-test"]
 	path = gdsc-test
 	url = https://github.com/aherbert/gdsc-test.git
+[submodule "gdsc-examples"]
+	path = gdsc-examples
+	url = https://github.com/aherbert/gdsc-examples.git
