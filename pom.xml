@@ -14,6 +14,7 @@
 		<module>gdsc-core</module>
 		<module>gdsc</module>
 		<module>gdsc-smlm</module>
+		<module>gdsc-examples</module>
 	</modules>
 
 	<name>GDSC ImageJ Super-Project</name>

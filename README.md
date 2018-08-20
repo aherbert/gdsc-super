@@ -57,6 +57,13 @@ The code was developed using [Eclipse](https://eclipse.org/ide/). Each submodule
 contains an eclipse directory with notes on how to set-up the code within 
 Eclipse including code formatting rules.
 
+Import using 'Import...' then 'Maven > Existing Maven Projects' and select the
+root gdsc-super folder.
+
+To download each of the submodule repositories then use the utility script, e.g.
+
+        ./checkout.sh ../gdsc
+
 # About #
 
 ###### Repository name ######
