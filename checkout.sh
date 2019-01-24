@@ -7,7 +7,7 @@ usage() {
     echo "Options:"
     echo "-h     Print help"
     echo "E.g. Checkout for Eclipse to folder ../gdsc"
-    echo "$0 -e ../gdsc"
+    echo "$0 ../gdsc"
     exit 0
 }
 
@@ -61,7 +61,7 @@ fi
 # Checkout
 cp pom.xml "$DIR"
 cd "$DIR"
-for d in gdsc-analytics gdsc-test gdsc-core gdsc gdsc-smlm gdsc-examples
+for d in gdsc-analytics gdsc-test gdsc-ij-parent gdsc-core gdsc gdsc-smlm gdsc-examples
 do
     git clone https://github.com/aherbert/${d}.git
 done

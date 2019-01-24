@@ -16,3 +16,6 @@
 [submodule "gdsc-examples"]
 	path = gdsc-examples
 	url = https://github.com/aherbert/gdsc-examples.git
+[submodule "gdsc-ij-parent"]
+	path = gdsc-ij-parent
+	url = https://github.com/aherbert/gdsc-ij-parent

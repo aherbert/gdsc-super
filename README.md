@@ -11,7 +11,8 @@ ImageJ](https://github.com/aherbert/gdsc-smlm) plugins into a version of
 Installation from source
 ------------------------
 
-The source code is accessed using [git](https://git-scm.com/) and built using [Maven](https://maven.apache.org/). 
+The source code is accessed using [git](https://git-scm.com/) and built
+using [Maven](https://maven.apache.org/). 
 
 1. Clone the GDSC Super repository
 
@@ -66,20 +67,14 @@ To download each of the submodule repositories then use the utility script, e.g.
 
 # About #
 
-###### Repository name ######
-GDSC Super
-
 ###### Owner(s) ######
 Alex Herbert
 
 ###### Institution ######
-Genome Damage and Stability Centre, University of Sussex
+[Genome Damage and Stability Centre, University of Sussex](http://www.sussex.ac.uk/gdsc/)
 
 ###### URL ######
-http://www.sussex.ac.uk/gdsc/intranet/microscopy/imagej/gdsc_plugins
-
-###### Email ######
-a.herbert@sussex.ac.uk
+[GDSC ImageJ plugins](http://www.sussex.ac.uk/gdsc/intranet/microscopy/UserSupport/AnalysisProtocol/imagej/gdsc_plugins/)
 
 ###### Description ######
 The Genome Damage and Stability Centre (GDSC) plugins are a collection of
